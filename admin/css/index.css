@@ -1,0 +1,65 @@
+/* @group Menu Pagina inicio */
+
+
+ul.botones {
+    list-style: none;
+    margin: 0px 0px 0px 30px;
+    padding: 0px;
+    border: none;
+	text-align: center;
+	
+    }
+		
+ul.botones li {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 0px;
+    
+    color: #ffffff;
+	padding: 5px;
+	text-align: center;
+	display: inline;
+}
+ 
+
+ul.botones li a {
+    display: block;
+    padding-left: 0px;
+    border: 1px solid #56728E;
+    background: #f0f7fA;
+    color: #56728E;
+    text-decoration: none;
+    
+   	text-align: center;
+    margin: 5px;
+	float: left;
+	height:  80px;
+	width: 100px;
+	font-size: 0.9em;
+	
+    }
+
+ul.botones li a:hover {
+    border: 1px solid #56728E;
+    color: #6293BE;
+	background: #D6E7F5;
+	text-decoration: none;
+    }
+ul.botones li a img {
+	display: block;
+	text-align: center;
+	margin: 4px auto;
+}
+
+h2.seccion-menu {
+   margin: 5px;
+   padding: 5px 5px 2px 5px;
+   font-size: 1.2em;
+   color: #56728E;
+   clear: both;
+ 
+}
+
+/* @end */

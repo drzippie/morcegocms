@@ -1,0 +1,23 @@
+body {
+	margin: 5px;
+	padding: 0px;
+	font-size: 10px;
+	font-family: verdana;
+	background: #FEC;
+}
+div.input-line {
+	clear: both;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #666;
+}
+div.input-line label {
+	float: left; 
+	width: 120px;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 12px;
+	clear: right;
+}
+div.input-line div.input-content {
+	padding-left: 130px;
+}

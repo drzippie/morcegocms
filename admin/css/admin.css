@@ -1,0 +1,1054 @@
+﻿/* @override http://arrakis.imac.local/adm_int/css/admin.css */
+
+/* @group General */
+
+body {
+ font-family: tahoma,verdana,sans-serif;
+  color: #000;
+  margin: 0px;
+  padding: 0px;
+  background: #BFC6C4;
+}
+table, div, td, p, input, select, textarea, label, a {
+   font-family: tahoma,verdana,sans-serif;
+
+}
+td {
+	padding: 2px;
+}
+input, textarea {
+	padding: 2px;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+ text-decoration: underline; 
+ color: #3A6B2E;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+p {
+  margin: 0.5em 0em 1em 0em;
+  text-align: left;
+}
+
+
+form {
+margin: 0px;
+padding: 0px;
+}
+
+input, select, button, textarea {
+border: 1px solid #456;
+}
+
+/* @end */
+
+/* @group Clases Genéricas */
+
+.centro         { text-align: center;   }
+.derecha        { text-align: right;    }
+.izquierda      { text-align: left;     }
+.justificado    { text-align: justify;   }
+
+.fizquierda {
+float: left;
+}
+.fderecha {
+float: right;
+}
+.fnegrita       { font-weight: bolder;   }
+
+/* @end */
+
+
+
+ 
+
+/* @group Layout */
+#doc2 {
+background: #fff url(../images/bg/bd.gif) repeat-y;
+border: 1px solid #4d646e;
+border-top: 0px;
+}
+#hd {
+ background: #fff url(../images/bg/bd.gif) repeat-y;  
+height: 90px;
+}
+#bd   {
+
+ 
+}
+
+
+#ft {
+	color: #fff;
+	text-align: right;
+	padding: 5px;
+	background: #fff url(../images/bg/title.gif) repeat-y;
+}
+
+
+
+#opciones { 
+    text-align: right;
+	padding:  5px 5px 5px 160px;
+	
+    background: #fff url(../images/bg/title.gif) repeat-y;
+	
+ }
+#encabezado {
+	background: #fff url(../images/bg/hd.gif) repeat-y;
+	padding:  5px 5px 5px 160px;
+	
+	
+}
+#subMenu {
+	background: #fff url(../images/bg/bd.gif) repeat-y;
+	
+	
+	
+}
+#encabezado h1 {
+	font-size: 1.1em;
+	color: #333;
+}
+#logo {
+	float: left;
+	width: 130px;
+	height: 90px;
+	padding-top: 0px;
+	text-align: center;
+	display: inline;
+	
+ }
+div.mainContent {
+	padding: 5px;
+	
+}
+
+
+span.itemMenuSuperior {
+	
+	margin: 5px;
+ }
+/* @end */
+
+
+/*
+
+#encabezado h1  {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: bolder;
+	padding: 4px 10px ;
+    border-bottom: 2px solid #305272;	
+	color: #305272;
+
+
+}
+*/
+/* @group Cajas */
+
+ 
+div.box {
+    border: none;
+    margin: 0em 0em 2em 5px;
+    padding: 0px;
+}
+
+div.box h4 {
+    font-size: 1em;
+}
+
+div.box h5 { 
+    background: #6897EC;
+    border: 1px solid #8CACBB;
+    border-style: solid solid none solid;
+    color: Black;
+    padding: 0em .2em 0em .2em;
+    text-transform: lowercase;
+    display: inline;
+    font-size: 1em;
+    height: 1em;
+}
+
+div.box h6 { 
+    background: #6897EC;
+    border: 1px solid #8CACBB;
+    border-style: solid solid none solid;
+    color: Black;
+    padding: 0em 0em 0em 0em;
+    text-transform: lowercase;
+    display: block;
+    font-size: 1em;
+    height: 1.2em;
+}
+
+
+div.box div.body {
+    background: white;
+    border-collapse: collapse;
+    border: 1px solid #8CACBB;
+}
+
+div.box a:hover {
+    color: #41697B;
+    background: #6897EC;
+}
+
+
+.boxDetails {
+    text-align: right;
+}
+
+div.box .contenido {
+    padding: .3em;
+}
+
+div.box a.close {
+    float: right;
+    text-transform: none;
+    border-left: 1px solid #8CACBB;
+    padding: 0em 0.2em;
+}
+
+div.box h1, 
+div.box h2, 
+div.box h3, 
+div.box h4 {
+    margin: 0;
+    padding: 0;
+}
+
+div.box .even {
+    background-color: #F7F9FA;
+}
+
+div.box .odd {
+    background-color: transparent;
+}
+
+div.box .highlight {
+    background:#FFA500;
+}
+
+/* @end */
+
+/* @group Arbol de páginas */
+.trigger{
+	cursor: pointer;
+}
+.branch{
+	display: none;
+	margin-left: 16px;
+}
+
+
+span.tab  {
+ 
+	border: 1px solid black;
+	padding: 4px 10px; 
+    margin: 0px 5px 0px 0px  ;	
+	border-bottom-width: 0px ;
+	cursor: pointer ;
+	background: #000;
+}
+
+/* @end */
+/* @group Calendario */
+
+
+
+div.calendar { position: relative; }
+
+.calendar, .calendar table {
+  border: 1px solid #556;
+  font-size: 11px;
+  color: #000;
+  cursor: default;
+  background: #eef;
+  
+}
+
+/* Header part -- contains navigation buttons and day names. */
+
+.calendar .button { /* "<<", "<", ">", ">>" buttons have this class */
+  text-align: center;    /* They are the navigation buttons */
+  padding: 2px;          /* Make the buttons seem like they're pressing */
+}
+
+.calendar .nav {
+  background: #778 url(menuarrow.gif) no-repeat 100% 100%;
+}
+
+.calendar thead .title { /* This holds the current "month, year" */
+  font-weight: bold;      /* Pressing it will take you to the current date */
+  text-align: center;
+  background: #fff;
+  color: #000;
+  padding: 2px;
+}
+
+.calendar thead .headrow { /* Row <TR> containing navigation buttons */
+  background: #778;
+  color: #fff;
+}
+
+.calendar thead .daynames { /* Row <TR> containing the day names */
+  background: #bdf;
+}
+
+.calendar thead .name { /* Cells <TD> containing the day names */
+  border-bottom: 1px solid #556;
+  padding: 2px;
+  text-align: center;
+  color: #000;
+}
+
+.calendar thead .weekend { /* How a weekend day name shows in header */
+  color: #a66;
+}
+
+.calendar thead .hilite { /* How do the buttons in header appear when hover */
+  background-color: #aaf;
+  color: #000;
+  border: 1px solid #04f;
+  padding: 1px;
+}
+
+.calendar thead .active { /* Active (pressed) buttons in header */
+  background-color: #77c;
+  padding: 2px 0px 0px 2px;
+}
+
+/* The body part -- contains all the days in month. */
+
+.calendar tbody .day { /* Cells <TD> containing month days dates */
+  width: 2em;
+  color: #456;
+  text-align: right;
+  padding: 2px 4px 2px 2px;
+}
+
+.calendar table .wn {
+  padding: 2px 3px 2px 2px;
+  border-right: 1px solid #000;
+  background: #bdf;
+}
+
+.calendar tbody .rowhilite td {
+  background: #def;
+}
+
+.calendar tbody .rowhilite td.wn {
+  background: #eef;
+}
+
+.calendar tbody td.hilite { /* Hovered cells <TD> */
+  background: #def;
+  padding: 1px 3px 1px 1px;
+  border: 1px solid #bbb;
+}
+
+.calendar tbody td.active { /* Active (pressed) cells <TD> */
+  background: #cde;
+  padding: 2px 2px 0px 2px;
+}
+
+.calendar tbody td.selected { /* Cell showing today date */
+  font-weight: bold;
+  border: 1px solid #000;
+  padding: 1px 3px 1px 1px;
+  background: #fff;
+  color: #000;
+}
+
+.calendar tbody td.weekend { /* Cells showing weekend days */
+  color: #a66;
+}
+
+.calendar tbody td.today { /* Cell showing selected date */
+  font-weight: bold;
+  color: #00f;
+}
+
+.calendar tbody .disabled { color: #999; }
+
+.calendar tbody .emptycell { /* Empty cells (the best is to hide them) */
+  visibility: hidden;
+}
+
+.calendar tbody .emptyrow { /* Empty row (some months need less than 6 rows) */
+  display: none;
+}
+
+/* The footer part -- status bar and "Close" button */
+
+.calendar tfoot .footrow { /* The <TR> in footer (only one right now) */
+  text-align: center;
+  background: #556;
+  color: #fff;
+}
+
+.calendar tfoot .ttip { /* Tooltip (status bar) cell <TD> */
+  background: #fff;
+  color: #445;
+  border-top: 1px solid #556;
+  padding: 1px;
+}
+
+.calendar tfoot .hilite { /* Hover style for buttons in footer */
+  background: #aaf;
+  border: 1px solid #04f;
+  color: #000;
+  padding: 1px;
+}
+
+.calendar tfoot .active { /* Active (pressed) style for buttons in footer */
+  background: #77c;
+  padding: 2px 0px 0px 2px;
+}
+
+/* Combo boxes (menus that display months/years for direct selection) */
+
+.combo {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 4em;
+  cursor: default;
+  border: 1px solid #655;
+  background: #def;
+  color: #000;
+  font-size: smaller;
+}
+
+.combo .label,
+.combo .label-IEfix {
+  text-align: center;
+  padding: 1px;
+}
+
+.combo .label-IEfix {
+  width: 4em;
+}
+
+.combo .hilite {
+  background: #acf;
+}
+
+.combo .active {
+  border-top: 1px solid #46a;
+  border-bottom: 1px solid #46a;
+  background: #eef;
+  font-weight: bold;
+}
+
+.calendar td.time {
+  border-top: 1px solid #000;
+  padding: 1px 0px;
+  text-align: center;
+  background-color: #f4f0e8;
+}
+
+.calendar td.time .hour,
+.calendar td.time .minute,
+.calendar td.time .ampm {
+  padding: 0px 3px 0px 4px;
+  border: 1px solid #889;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.calendar td.time .ampm {
+  text-align: center;
+}
+
+.calendar td.time .colon {
+  padding: 0px 2px 0px 3px;
+  font-weight: bold;
+}
+
+.calendar td.time span.hilite {
+  border-color: #000;
+  background-color: #667;
+  color: #fff;
+}
+
+.calendar td.time span.active {
+  border-color: #f00;
+  background-color: #000;
+  color: #0f0;
+}
+
+/* @end */
+
+
+
+
+
+/* @group Menu Izquierda */
+
+#menuIzquierda {
+		width:  140px;
+}
+
+div.menu img {
+	text-align: center;
+	
+}
+
+div.menu {
+ 
+}
+div.menu  h2  {
+	text-align: left; 
+	margin: 5px 10px 5px 5px;
+	padding: 2px;
+	border-bottom: 1px solid #9AB8D4;
+	border-right: 1px solid #9AB8D4;
+	border-top:  1px solid #1D3144;
+	border-left:  1px solid #1D3144;
+ 	background: #305272;
+ 	color: #f2f2f2;
+	font-size: .8em;
+	font-weight: bolder;
+}
+
+ 
+div.menu a {
+display: block;
+margin: 5px 10px 5px 15px;
+text-decoration: none;
+font-weight: bolder;
+font-size: 0.8em;
+line-height: 1.75em;
+
+color: #f2f2f2;
+
+text-align: left;
+}
+div.menu a:hover {
+ 
+color: #FEDE8B;
+}
+
+div.menu a.active {
+color: #f2f2f2;
+}
+
+
+/* @end */
+
+
+div.centrado {
+  margin: auto;
+  text-align: left;
+
+}
+
+div.caja3d {
+	border: 1px groove #c0c0c0;
+	margin: 4px; 
+	 padding:5px; 
+	 text-align: center; 
+	 font-weight: bolder;
+	 background: #f2f2f2;
+}
+div.tip {
+	background: #FFFF99;
+}
+div.emptyResult {
+	color: #5E814B;
+	font-weight: bolder;
+	font-style: italic;
+	font-size:  1.1em;
+	text-align: center;
+}
+/* @group tablas */
+
+/* @group table.botones */
+table.botones {
+	margin-top:  20px;
+}
+
+/* @end */
+
+/* @group Ficheros */
+table.ficheros {
+	margin-top:  10px;
+}
+
+/* @end */
+
+/* @group Ruler */
+
+table.ruler {
+border-right: 1px solid #5E814B;
+border-bottom: 1px solid #5E814B;
+}
+
+
+table.ruler th {
+  background: #9EB46C;
+  border-left: 1px solid #5E814B;
+  border-top: 1px solid #5E814B;
+  text-decoration : none;
+  color : #000;
+  text-align: center;
+  padding: 2px;
+  font-size:  1.1em;
+}
+table.ruler td {
+	padding:  2px 4px;
+border-left: 1px solid #5E814B;
+border-top: 1px solid #5E814B;
+color:  #333;
+}
+
+table.ruler tr.non td {
+background: #F4F7EC;
+}
+
+table.ruler tr {
+  background: white;
+ 
+}
+ 
+/* @end */
+
+/* @group PageList */
+
+table.PageList {
+	width: 720px;
+	margin-top:  10px;
+}
+table.PageList td.col1 {
+	width: 110px; 
+	text-align:right;
+}
+table.PageList td.col1 a {
+	margin-left: 5px;
+}
+table.PageList td.col2 {
+	width: 550px;
+	padding: 2px 5px;
+}
+table.PageList td.col3 {
+	text-align: center;
+}
+table.PageList td.col3 span.idiomas {
+	margin: 0px; padding: 0px; margin-left: 4px; margin-right: 4px; padding-left: 4px; 
+}
+
+a.paginaOn {
+	display: block;
+	color: #333 ; 
+	font-weight: bolder;
+	text-decoration: none;
+ }
+a.paginaOff {
+	display: block;
+ 	font-style: italic; 
+	color: #666; 
+	text-decoration: none;
+}
+
+
+/* @end */
+
+
+
+
+/* @end */
+
+/* @group Paginación */
+
+
+div.paginacion {
+	text-align: left;
+	height:  25px;
+}
+div.paginacion div {
+	margin-right: 2px;
+	height: 20px;
+}
+div.paginacion strong {
+	
+	margin: 2px;
+	padding: 2px 5px;
+	border: 1px solid #5E814B;
+	border-bottom: 0px;
+	background: #5E814B;
+	color:  #fff;
+}
+div.paginacion a {
+	background: #E0F7D4;
+	border: 1px solid #5E814B;
+ 	margin: 2px;
+	padding: 2px 5px;
+	color:  #5E814B;
+	
+}
+
+/* @end */
+
+
+
+/*
+Edicion de plantillas
+
+*/
+
+
+
+
+
+
+input:focus, input.sffocus, textarea:focus, textarea.sffocus, select:focus, select.sffocus{
+background: #E5E6B3;
+border: 1px solid #6B6B2E;
+
+}
+
+
+
+div.elemento-arbol {
+float: none; 
+height: 20px;
+}
+
+div.elemento-arbol img {
+text-align: right;
+
+}
+
+
+
+
+
+.div-menu-2 {
+border-bottom: 1px solid #ccc;
+background: #fff;
+margin: 4px;
+text-align: right;
+padding: 2px;
+}
+
+.div-linea-2 {
+border: 1px solid #fff;
+background: #fff;
+
+}
+
+.div-linea-2 a {
+text-decoration: underline;
+
+}
+/* phpinfo */
+td.e, td.v, tr.v td{
+	font-size: 1.1em;
+}
+
+
+td#infobox {
+	vertical-align: top;
+}
+
+span.comment {
+	display: block;
+	color: #456 ;
+	
+}
+div.clear {
+	clear: both;
+	max-height: 1px;
+	height:1px ;
+	background: #c00;
+	font-size: 1px;
+}
+/* Tabla de configuración */ 
+
+table.config {
+	color: #333;
+}
+table.config th {
+	color: #333;
+	font-size: 1.1em;
+	font-weight: bolder;
+	text-align: left; 
+	padding: 5px;
+	border-bottom: 1px solid #666;
+	
+}
+table.config td  {
+	color: #333 ;
+	padding: 5px  10px;
+    
+   
+	
+}
+table.config td +td {
+	color: #333;
+	padding-left: 0px;
+}
+
+
+.boton-admin-off {
+	width: 115px;
+	height: 22px;
+	border: 0;
+	padding: 0;
+	
+	color: #333;
+	background: url(boton_admin.gif) no-repeat ;
+}
+.boton-admin-on {
+	width: 115px;
+	height: 22px;
+	border: 0;
+	padding: 0;
+	
+	color: #333;
+	background: url(boton_admin_over.gif) no-repeat ;
+}
+div.masinfo {
+    display: none;
+	margin: 0;
+	padding: 2px 0px
+}
+
+
+div#divmover {
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+position: absolute ;
+border: 2px solid black;
+background: #FFFBD0;
+z-index: 12;
+top: 0;
+left: 0;
+float: left;
+margin-left: -150px;
+margin-top: -40px;
+}
+div#divmover form {
+	display: block;
+	padding:5px;
+	margin: 0;
+	display: block;
+}
+div#divmover h5 {
+background: #000;
+color: #fff;
+font-size: 0.8em;
+text-align: center;
+padding: 2px 0px 2px 0px;
+margin: 0;
+}
+div#divmover a {
+	margin: 0px 0px 4px 4px;
+	display: block;
+}
+div#divmover a img {
+	display: inline;
+}
+
+div#divMenuPagina {
+position: absolute ;
+border: 2px solid black;
+background: #FFFBD0;
+z-index: 6000;
+margin: 0;
+padding: 0;
+top: 0;
+left: 0;
+margin-left: -150px;
+margin-top: -60px;
+}
+div#divMenuPagina form {
+	display: block;
+	padding:5px;
+	margin: 0;
+}
+div#divMenuPagina h5 {
+background: #000;
+color: #fff;
+font-size: 0.8em;
+text-align: center;
+padding: 2px 0px 2px 0px;
+margin: 0;
+}
+div#divMenuPagina a {
+	margin: 0px 0px 4px 4px;
+	display: block;
+}
+div#divMenuPagina a img {
+	display: inline;
+}
+
+
+div.barra-botones {
+	text-align: right;
+}
+
+div.contenidotab {
+  
+  padding: 1em;
+  text-align: left;
+  background: #fff;
+  
+}
+
+
+
+div.input-line {
+	clear: both;
+	padding-bottom: 4px;
+}
+div.input-line label {
+	float: left; 
+	width: 200px;
+	text-align: right;
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+div.input-line div.input-content {
+	padding-left: 210px;
+}
+
+
+/*
+	22/11/2006: comienzo de la limpieza CSS
+*/
+
+
+div.clear {
+	overflow: hidden	;
+	height: 1px;
+	font-size: 1px;
+	clear: both;
+	background: none;
+}
+
+
+
+.fleft {
+	text-align: left;
+}
+.fbold {
+	font-weight: bolder;
+}
+
+.fmedium {
+	font-size: 100%;
+}
+
+
+
+
+
+/* listas de páginas */
+
+div.menuPageList {
+	text-align: right;
+	padding-right: 10px; 
+	
+}
+
+/* Layout General */
+
+
+.oculto {
+	visibility: hidden;
+}
+
+
+
+
+/* Cuadros de dialogo */
+div.dialogo {
+	text-align: center;
+	padding-top: 10%;
+	height: 400px;
+
+}
+div.dialogo-centrado {
+	margin: 10px auto ;
+	text-align: left;
+}
+
+table.dialogo {
+	background: #8CADBC; border: 2px solid #909090;  margin: 10px; max-width: 400px; text-align: justify;
+	margin: 10px auto ;
+	text-align: left;
+	width: 400px;
+}
+div.dialogo td.titulo  { background: #B4CAD4;text-align: center; font-weight: bolder; padding: 5px; }
+div.dialogo td.icono {padding: 10px;  width: 40px; text-align: left; vertical-align: top; }
+div.dialogo td.content { padding: 10px; color: #fff; }
+div.dialogo div.botones {
+	margin: 5px ;
+	text-align: center;
+	
+}
+table.dialog td {
+	padding: 5px;
+}
+div.dialog input {
+	
+}
+
+
+
+#divSolapas { width: 750px;} /* arbitrary width */
+
+#divSolapas .yui-content {
+    padding:1em;
+}
+
+div#divSolapas td, th {
+	color: #666;
+}
+div#divSolapas label {
+	color: #333;
+	width: 15em;
+	float: left;
+	text-align: right;
+	margin: 0 0.5em 2px 0;
+	clear: both ;
+	font-weight: bolder;
+}
+div#divSolapas span {
+	color: #fff;
+	font-weight: bolder;
+}
+/*
+Tablas
+*/
+table.wide {
+	width: 700px;
+}
+div.dialog {
+	
+	
+}
+
+div.dialog  div.input-line label{
+font-weight: normal;	
+font-size: 1em;
+width: 100px;
+}
+div.dialog  div.input-line div.input-content{
+padding-left: 105px;
+}
+

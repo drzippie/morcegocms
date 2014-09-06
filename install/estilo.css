@@ -1,0 +1,120 @@
+form {
+    margin: 0px;
+}
+body {
+   margin: 20px;
+   font-size: 0.9em;
+   font-family: arial, helvetica;
+   background: white;
+   color: black;
+   vertical-align: top;
+   text-align: justify;
+}
+h2 {
+   margin-top: 0.5em;
+   margin-bottom: 1em;
+
+}
+ol.error {
+    font-weight: bolder;
+    color: red;
+}
+div {
+  font-size: 0.9em;
+   font-family: arial, helvetica;
+}
+li {
+ font-size: 0.9em;
+}
+p {
+   margin-bottom: 1em;
+   font-size: 0.9em;
+   font-family: arial, helvetica;
+   color: black;
+   vertical-align: top;
+   text-align: justify;
+}
+td {
+   vertical-align: top;
+   font-size: 0.9em;
+   text-align: justify;
+}
+A{ text-decoration: bold;
+   color: #0000d0;
+   }
+A:link, A:visited {
+   color: #0000d0;
+
+ text-decoration: none;    }
+A:hover { text-decoration: underline;
+        color: #cc0000;       }
+
+div.hijas {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  
+}
+
+div.menusuperior {
+  float: left;
+ background: #CBDAE1;
+ padding-top: 3px; 
+ padding-left: 7px;
+ padding-right: 7px;
+ padding-bottom: 3px;
+ margin-right: 2px;
+ margin-top: 5px;
+ color: white;
+ border: 1px solid #8CACBB;
+ font-size: 0.75em;
+
+
+}
+
+div.menuderecha {
+ background: #CBDAE1;
+ padding-top: 3px; 
+ padding-left: 7px;
+ padding-right: 7px;
+ padding-bottom: 3px;
+ margin: 5px;
+ color: white;
+ border: 1px solid #8CACBB;
+ width: 120px;
+ text-align: center;
+ font-size: 0.75em;
+}
+
+div.titulo {
+    font: 150% Verdana, Helvetica, Arial, sans-serif;
+    color: #8CACBB;
+    text-align: right;
+}
+div.titulo span.titulo2 {
+    color: #8CACBB;
+    font: 160% Verdana, Helvetica, Arial, sans-serif;
+}
+
+td.centrada {
+        vertical-align : middle;
+        text-align: center;
+}
+
+a.lista {
+  font-size: 0.75em;
+}
+.notaayuda { 
+    floating: left;
+    position: absolute;
+    top: 1;
+    left: 1;
+    width: 200px;
+    /* height: 100%; */
+    font-family: verdana, arial;
+    font-size: 10px;
+    font-weight: normal;
+    visibility: hidden;
+    color: #B26804;    
+    z-index: 5;
+
+}

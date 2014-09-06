@@ -1,0 +1,95 @@
+div.menuEditPages {
+	text-align: right; 
+	padding-right: 5px;
+}
+/* controles editar paginas */
+select#tipo {
+	border: 1px solid #000;
+}
+input#fechamod {
+	width: 100px;
+}
+button#btnfechamod {
+	height: 20px;
+}
+select#tipo{
+	width: 250px;
+	border: 1px solid #333;
+ }
+select#template{
+	width: 250px;
+	border: 1px solid #333;
+ }
+input#idpagina {
+	
+	width: 250px;
+}
+input#titulo  {
+	width: 500px;
+}
+select#orden {
+	
+}
+
+textarea#descripcion {
+	width: 500px; 
+	
+	height: 50px;
+}
+select#idgroup {
+	width: 250px;
+}
+input#activa {
+	border: 0px;
+}
+input#icono, input#imagen {
+	
+	width: 250px;
+}
+select#icono_align, select#img_align {
+	width: 250px;
+}
+
+input#textohijas {
+	width: 500px; 
+}
+
+input#enlace, input#textolink {
+	width: 500px; 
+}
+textarea#variables {
+	width: 500px; 
+	
+	height: 50px;
+}
+textarea#texto {
+	width: 700px; 
+	height:400px; 
+	
+	
+}
+
+#divmenutexto {
+    
+    padding: 1px; 
+    clear: both; 
+    margin: 2px;
+	height: 25px;
+}
+
+a.aRTF {
+	float: left;
+	display: block;
+	padding: 2px 4px;
+	border: 1px solid #333;
+	margin: 2px;
+	background: #FFECB3;
+	color: #333;
+	font-weight: bolder;
+}
+
+a.aRTF:hover {
+	background: #B3C6FF;
+	color: #333;
+	text-decoration: none;
+}

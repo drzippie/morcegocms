@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: /lar
+Disallow: /logs
+Disallow: /doc
+Disallow: /includes
+Disallow: /install

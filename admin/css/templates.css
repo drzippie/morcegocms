@@ -1,0 +1,9 @@
+div.menuEditPages {
+	text-align: right; 
+	padding-right: 5px;
+}
+
+textarea#descripcion, textarea#content, textarea#contentfooter, textarea#contentheader {
+	width: 700px; 
+	height: 300px;
+}

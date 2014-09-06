@@ -1,0 +1,232 @@
+﻿<?xml version="1.0"?> 
+<?xml-stylesheet type="text/xsl" href="tags.xsl"?> 
+<tags>
+	<tag>
+		<family>pagina</family>
+		<function>idpagina</function>
+		<returns>El Identificador de la página actual, que se corresponde con la url</returns>
+		<example>{pagina:idpagina}</example>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>titulo</function>
+		<returns>Título de la página actual</returns>
+		<example>{pagina:titulo}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>texto</function>
+		<returns>Texto de la página actual</returns>
+		<example>{pagina:texto}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>descripcion</function>
+		<returns>Título de la página actual</returns>
+		<example>{pagina:descripcion}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>url_imagen</function>
+		<returns>url de la imagen de la página actual</returns>
+		<example>{pagina:url_imagen}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>tag_imagen</function>
+		<returns>tag html completo de la imagen de la página actual</returns>
+		<example>{pagina:tag_imagen}</example>
+	</tag>
+	
+		<tag>
+		<family>pagina</family>
+		<function>url_icono</function>
+		<returns>url del icono  de la página actual</returns>
+		<example>{pagina:url_icono}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>tag_icono</function>
+		<returns>tag html completo del icono  de la página actual</returns>
+		<example>{pagina:tag_icono}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>href</function>
+		<returns>URL de la página actual, si tiene algun valor en la propiedad enlace será este valor</returns>
+		<example>{pagina:href}</example>
+	</tag>
+	
+	<tag>
+		<family>pagina</family>
+		<function>enlace</function>
+		<returns>Contenido de la propiedad enlace de la página actual</returns>
+		<example>{pagina:enlace}</example>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>num_pages</function>
+		<returns>El número de páginas hijas activas de la página actual</returns>
+		<example>{pagina:num_pages}</example>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>num_contents</function>
+		<returns>El número de contenidos hijos activas de la página actual</returns>
+		<example>{pagina:num_contents}</example>
+	</tag>	
+	<tag>
+		<family>pagina</family>
+		<function>meta</function>
+		<parameters>
+			<parameter>
+				<name>Identificador de metadato</name>
+				<type>String</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve el metadato indicado de la página actual</returns>
+		<example>{pagina:meta:nombremetadato}</example>
+	</tag>	
+	<tag>
+		<family>pagina</family>
+		<function>variable</function>
+		<parameters>
+			<parameter>
+				<name>Identificador de la variable</name>
+				<type>String</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve el valor de la variable indicada de la página actual</returns>
+		<example>{pagina:variable:nombrevariable}</example>
+		<help>Las variables se especifican en el campo variable en la forma nombre=valor, cada variable debe ir en una nueva línea</help>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>fecha</function>
+		<parameters>
+			<parameter>
+				<name>Formato de Fecha</name>
+				<type>String</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve la fecha de publicación de la página actual</returns>
+		<example>{pagina:fecha:d-m-Y}</example>
+		<help>El formato por defecto para mostrar la fecha es: d/m/Y</help>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>encoded</function>
+		<parameters>
+			<parameter>
+				<name>Propiedad de la página</name>
+				<type>String</type>
+			</parameter>
+			<parameter>
+				<name>Tamaño máximo de la cadena resultante</name>
+				<type>Integer</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve la propiedad con un número máximo de caracteres eliminando de esta todos los tags html y caracteres especiales({,}) </returns>
+		<example>{pagina:encoded:texto:100}</example>
+		
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>raw</function>
+		<parameters>
+			<parameter>
+				<name>Propiedad de la página</name>
+				<type>String</type>
+			</parameter>
+			<parameter>
+				<name>Tamaño máximo de la cadena resultante</name>
+				<type>Integer</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve la propiedad con un número máximo de caracteres eliminando de esta todos los tags html y caracteres especiales({,}) así como los caracteres extendidos </returns>
+		<example>{pagina:raw:title:50}</example>
+		
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>lenght</function>
+		<parameters>
+			<parameter>
+				<name>Propiedad de la página</name>
+				<type>String</type>
+			</parameter>
+			 
+		</parameters>
+		<returns>Nos devuelve el tamaño, en caracteres,  de la propiedad indicada de la página actual</returns>
+		<example>Tamaño descripción: {pagina:lenght:descripcion}</example>
+	</tag>
+	<tag>
+		<family>pagina</family>
+		<function>thumbnail</function>
+		<parameters>
+			<parameter>
+				<name>Ancho</name>
+				<type>Integer</type>
+			</parameter>
+			<parameter>
+				<name>Alto</name>
+				<type>Integer</type>
+			</parameter>
+			<parameter>
+				<name>Color Fondo</name>
+				<type>RRGGBB</type>
+			</parameter>
+		</parameters>
+		<returns>Nos devuelve la url de una imagen en miniatura creada a partir de la imagen de la página actual con las medidas y fondo seleccionado</returns>
+		<example>{pagina:thumb:50:50:000000}</example>
+		<help>El color de fondo será por defecto el blanco (FFFFFF)</help>
+	</tag>	
+	<tag>
+		<family>pagina</family>
+		<function>parent</function>
+		<parameters>
+			<parameter>
+				<name>function/propiedad de pagina</name>
+				<type>String</type>
+			</parameter>
+		
+		</parameters>
+		<returns>Nos devuelve la propiedad o resultado de la funcion de la página padre de la actual</returns>
+		<example>{pagina:parent:titulo}</example>
+	</tag>	
+	<tag>
+		<family>pagina</family>
+		<function>root</function>
+		<parameters>
+			<parameter>
+				<name>function/propiedad de pagina</name>
+				<type>String</type>
+			</parameter>
+		
+		</parameters>
+		<returns>Nos devuelve la propiedad o resultado de la funcion de la página Principal (hija de la de inicio) de la que desciende  la actual</returns>
+		<example>{pagina:root:title}</example>
+	</tag>	
+	<tag>
+		<family>pagina</family>
+		<function>index</function>
+		<parameters>
+			<parameter>
+				<name>function/propiedad de pagina</name>
+				<type>String</type>
+			</parameter>
+		
+		</parameters>
+		<returns>Nos devuelve la propiedad o resultado de la funcion de la página de inicio</returns>
+		<example>{pagina:index:variable:colorFondo}</example>
+	</tag>	
+
+
+
+</tags>

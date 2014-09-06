@@ -1,0 +1,51 @@
+#
+# MorcegoCMS .htaccess
+#
+# Protegemos directorios y extensiones
+<Files ~ "(\.(sql)|includes)$">
+  order deny,allow
+  deny from all
+</Files>
+# No mostraremos el contenido de los directorios
+Options -Indexes
+# Permitiremos los enlaces simbolicos
+# Options FollowSymLinks
+# Fichero por defecto index.php
+DirectoryIndex index.php
+
+# Ficheros de error personalizados 
+#ErrorDocument 400 /error.php
+#ErrorDocument 402 /error.php
+#ErrorDocument 403 /error.php
+#ErrorDocument 404 /error.php
+#ErrorDocument 500 /error.php
+
+# Opciones del mod_rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  # imagenes
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^/img/(.*)$
+  RewriteRule ^img/(.*)$ /lar/cache.imagen.%1  [L]
+  #[L]
+  # iconos
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^/icn/(.*)$
+  RewriteRule ^icn/(.*)$ /lar/cache.icono.%1 [L,QSA]
+  # ficheros
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^/ficheros/(.*)$
+  RewriteRule ^(.*)$ /lar/cache.fichero.%1 [L,QSA]
+  # botones
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^/botones/(.*)$
+  RewriteRule ^(.*)$ /lar/cache.boton.%1 [L,QSA]
+  # Idpaginas 
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+</IfModule>

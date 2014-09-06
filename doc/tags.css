@@ -1,0 +1,17 @@
+body {
+	margin: 10px;
+	font-family: verdana;
+}
+
+dl {
+	margin: 2em 10em;
+}
+dt {
+	margin: 2em 0 1em 0;
+	font-weight: bolder;
+	background: #f2f2f2;
+	padding: 5px;
+}
+dd {
+	margin: .5em 5em;
+}

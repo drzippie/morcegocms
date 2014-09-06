@@ -1,0 +1,109 @@
+---
+menu: 
+  - 
+    name: Paginas
+    items: 
+      - 
+        title: Editar Páginas
+        target: 
+        url: admin.php?q=paginas 
+        onclick: 
+      - 
+        title: Ir a Página...
+        url: #
+        target: 
+        onclick: iraidpagina();
+      - 
+        title: Editar Páginas
+        url: admin.php?q=paginas/arbol 
+        target: 
+        onclick: 
+        
+  - 
+    name: Elementos
+    items: 
+      - 
+        title: Plantillas
+        url: admin.php?q=templates 
+        target: 
+        onclick: 
+      - 
+        title: Archivos
+        url: admin.php?q=files
+        target: 
+        onclick:  
+      - 
+        title: Botones
+        url: admin.php?q=botones
+        target: 
+        onclick:  
+  - 
+    name: Administración
+    items: 
+      - 
+        title: Configuración
+        url: admin.php?q=edit_config 
+        target: 
+        onclick: 
+      - 
+        title: Usuarios
+        url: admin.php?q=users
+        target: 
+        onclick:  
+      - 
+        title: Logs
+        url: admin.php?q=logs/list/20
+        target: 
+        onclick:  
+  - 
+    name: Herramientas
+    items: 
+      - 
+        title: Borrar Caché
+        url: # 
+        target: 
+        onclick: borrar_cache();
+      - 
+        title: Backup
+        url: admin.php?q=export
+        target: 
+        onclick:  
+      - 
+        title: Reordenar
+        url: admin.php?q=utils/reordenar
+        target: 
+        onclick:    
+  - 
+    name: Utilidades
+    items: 
+      - 
+        title: DB Info
+        url: admin.php?q=utils/dbinfo
+        target: 
+        onclick: 
+      - 
+        title: PHP Info
+        url: admin.php?q=utils/phpinfo
+        target: 
+        onclick:  
+  - 
+    name: Sesión
+    items: 
+      - 
+        title: Sesiones activas
+        url: admin.php?q=sesiones
+        target: 
+        onclick: 
+      - 
+        title: Salir
+        url: index.php?q=logout
+        target: 
+        onclick:  
+  - 
+    name: Acerca de...
+    items: 
+      - 
+        title: MorcegoCMS
+        url: admin.php?q=utils/morcegoCMS
+        target: 
+        onclick: 
